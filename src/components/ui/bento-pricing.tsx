@@ -91,33 +91,33 @@ export function BentoPricing() {
         </div>
         <div className="flex items-center gap-3 p-3">
           <Badge variant="secondary" className="bg-white/10 text-white border-white/20 font-open-sans-custom text-xs">
-            ПРЕМИУМ
+            ПАКЕТ 10+
           </Badge>
           <Badge
             variant="outline"
             className="hidden lg:flex bg-white/5 text-white border-white/20 font-open-sans-custom text-xs"
           >
-            <SparklesIcon className="me-1 size-3" /> Популярный
+            <SparklesIcon className="me-1 size-3" /> Выгодно
           </Badge>
           <div className="ml-auto">
             <Button size="sm" className="bg-white text-black hover:bg-gray-100 font-open-sans-custom text-xs">
-              Подписаться
+              Заказать
             </Button>
           </div>
         </div>
         <div className="flex flex-col p-3 lg:flex-row">
           <div className="pb-2 lg:w-[30%]">
             <span className="font-mono text-3xl font-semibold tracking-tight text-white [text-shadow:_0_4px_20px_rgb(0_0_0_/_60%)]">
-              2 000 ₽
+              от 1 700 ₽
             </span>
-            <span className="text-gray-300 text-xs font-open-sans-custom">/мес</span>
+            <span className="text-gray-300 text-xs font-open-sans-custom">/рассылка</span>
           </div>
           <ul className="text-gray-300 grid gap-2 text-xs lg:w-[70%] font-open-sans-custom">
             {[
-              "2 000 ₽ кредитов включено ежемесячно",
-              "Докупайте кредиты сверх месячного лимита",
-              "5x увеличенный лимит вложений",
-              "Импорт дизайнов из популярных инструментов",
+              "Предоплата от 10 рассылок — скидка на каждую",
+              "3 видеоотчёта по каждой рассылке",
+              "3 сим-карты работают одновременно",
+              "Любой формат: текст, фото, ссылки",
             ].map((f, i) => (
               <li key={i} className="flex items-center gap-2">
                 <Check className="w-[1.05rem] h-[1.05rem] text-white flex-shrink-0" strokeWidth={3} />
@@ -129,46 +129,49 @@ export function BentoPricing() {
       </div>
 
       <PricingCard
-        titleBadge="СТАРТ"
-        priceLabel="0 ₽"
+        titleBadge="РАЗОВО"
+        priceLabel="1 900 ₽"
+        priceSuffix="/рассылка"
         features={[
-          "500 ₽ кредитов включено ежемесячно",
-          "Деплой приложений в облако",
-          "Визуальное редактирование",
-          "Синхронизация с Git",
+          "1 рассылка вашей рекламы",
+          "3 видеоотчёта о процессе",
+          "3 сим-карты для надёжности",
+          "Старт в течение 24 часов",
         ]}
         className="lg:col-span-3"
-        cta="Начать"
+        cta="Заказать"
       />
 
       <PricingCard
-        titleBadge="КОМАНДА"
-        priceLabel="3 000 ₽"
-        priceSuffix="/чел/мес"
+        titleBadge="МАЛЫЙ БИЗНЕС"
+        priceLabel="1 900 ₽"
+        priceSuffix="/рассылка"
         features={[
-          "3 000 ₽ кредитов на участника ежемесячно",
-          "Единый биллинг и управление командой",
-          "Общие чаты и совместная работа",
+          "Регулярные рассылки под ваш бизнес",
+          "Приоритетная обработка заявок",
+          "Гибкий график отправки",
         ]}
         className="lg:col-span-4"
+        cta="Обсудить"
       />
 
       <PricingCard
-        titleBadge="БИЗНЕС"
-        priceLabel="10 000 ₽"
-        priceSuffix="/чел/мес"
-        features={["3 000 ₽ кредитов на участника ежемесячно", "Отключение обучения по умолчанию", "Полный доступ к API"]}
+        titleBadge="ПРЕДОПЛАТА 10+"
+        priceLabel="Скидка"
+        priceSuffix=""
+        features={["Цена ниже при оплате от 10 рассылок", "Фиксированная стоимость на весь пакет", "Удобно для постоянного продвижения"]}
         className="lg:col-span-4"
+        cta="Узнать цену"
       />
 
       <PricingCard
-        titleBadge="КОРПОРАЦИЯ"
+        titleBadge="ПОД КЛЮЧ"
         priceLabel="По запросу"
         priceSuffix=""
         features={[
-          "Отключение обучения по умолчанию",
-          "SAML SSO",
-          "Приоритетный доступ",
+          "Помощь с подготовкой рекламного текста",
+          "Рекомендации по аудитории",
+          "Индивидуальный подход",
           "Персональная поддержка",
         ]}
         className="lg:col-span-8"

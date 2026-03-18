@@ -159,18 +159,19 @@ export default function Index() {
           <div className="mx-auto max-w-4xl">
             <div className="text-center px-0 leading-5">
               <h1 className="mb-8 text-balance text-5xl tracking-tight text-white [text-shadow:_0_4px_20px_rgb(0_0_0_/_60%)] md:text-6xl lg:text-8xl">
-                <span className="font-open-sans-custom not-italic">Идея.</span>{" "}
-                <span className="font-serif italic">Промпт.</span>{" "}
+                <span className="font-open-sans-custom not-italic">Охват.</span>{" "}
+                <span className="font-serif italic">Быстро.</span>{" "}
                 <span className="font-open-sans-custom not-italic">Результат.</span>
               </h1>
 
               <p className="mb-8 mx-auto max-w-2xl text-pretty leading-relaxed text-gray-300 [text-shadow:_0_2px_10px_rgb(0_0_0_/_50%)] font-thin font-open-sans-custom tracking-wide leading-7 text-xl">
-                дизайнер, разработчик или просто любопытный — возьми идею,{" "}
-                <span className="font-serif italic">опиши</span> её и наблюдай, как она оживает
+                Массовые рассылки в WhatsApp для вашего бизнеса —{" "}
+                <span className="font-serif italic">1 рассылка всего за 1 900 ₽</span>,{" "}
+                3 видеоотчёта и реальный охват
               </p>
 
               <div className="flex justify-center">
-                <ShinyButton className="px-8 py-3 text-base">начать</ShinyButton>
+                <ShinyButton className="px-8 py-3 text-base">Заказать рассылку</ShinyButton>
               </div>
             </div>
           </div>
@@ -234,7 +235,7 @@ export default function Index() {
                 О нас
               </h1>
               <p className="text-gray-300 mt-4 text-sm md:text-base font-open-sans-custom [text-shadow:_0_2px_10px_rgb(0_0_0_/_50%)]">
-                Узнайте больше о нашей миссии, видении и ценностях, которые движут нами.
+                Честная реклама в WhatsApp — без ботов, только реальные номера и доказательства.
               </p>
             </div>
             <AboutQuote />
@@ -258,23 +259,23 @@ export default function Index() {
 
           <div className="relative z-10 mx-auto w-full max-w-5xl mt-[5vh]">
             <ContactCard
-              title="Свяжитесь с нами"
-              description="Если у вас есть вопросы о наших услугах или нужна помощь, заполните форму. Мы стараемся отвечать в течение 1 рабочего дня."
+              title="Заказать рассылку"
+              description="Оставьте заявку — расскажите о вашем бизнесе и что хотите сообщить клиентам. Запустим рассылку в течение 24 часов."
               contactInfo={[
                 {
                   icon: MailIcon,
                   label: "Почта",
-                  value: "hello@promptcraft.dev",
+                  value: "info@wa-rassylki.ru",
                 },
                 {
                   icon: PhoneIcon,
-                  label: "Телефон",
-                  value: "+7 (495) 123-45-67",
+                  label: "WhatsApp / Телефон",
+                  value: "+7 (000) 000-00-00",
                 },
                 {
                   icon: MapPinIcon,
-                  label: "Адрес",
-                  value: "Москва, Россия",
+                  label: "Работаем",
+                  value: "По всей России",
                   className: "col-span-2",
                 },
               ]}
@@ -282,42 +283,38 @@ export default function Index() {
               <form action="" className="w-full space-y-4">
                 <div className="flex flex-col gap-2">
                   <Label className="text-white [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)] font-open-sans-custom">
-                    Имя
+                    Ваше имя
                   </Label>
                   <Input
                     type="text"
+                    placeholder="Иван Иванов"
                     className="bg-white/10 border-white/20 text-white placeholder:text-gray-400 [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)]"
                   />
                 </div>
                 <div className="flex flex-col gap-2">
                   <Label className="text-white [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)] font-open-sans-custom">
-                    Email
-                  </Label>
-                  <Input
-                    type="email"
-                    className="bg-white/10 border-white/20 text-white placeholder:text-gray-400 [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)]"
-                  />
-                </div>
-                <div className="flex flex-col gap-2">
-                  <Label className="text-white [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)] font-open-sans-custom">
-                    Телефон
+                    WhatsApp / Телефон
                   </Label>
                   <Input
                     type="tel"
+                    placeholder="+7 (999) 000-00-00"
                     className="bg-white/10 border-white/20 text-white placeholder:text-gray-400 [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)]"
                   />
                 </div>
                 <div className="flex flex-col gap-2">
                   <Label className="text-white [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)] font-open-sans-custom">
-                    Сообщение
+                    Ваш бизнес и текст рассылки
                   </Label>
-                  <Textarea className="bg-white/10 border-white/20 text-white placeholder:text-gray-400 [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)]" />
+                  <Textarea
+                    placeholder="Расскажите о вашем бизнесе и что хотите донести до клиентов..."
+                    className="bg-white/10 border-white/20 text-white placeholder:text-gray-400 [text-shadow:_0_2px_6px_rgb(0_0_0_/_40%)]"
+                  />
                 </div>
                 <Button
                   className="w-full bg-white text-black hover:bg-gray-100 [text-shadow:_0_1px_2px_rgb(0_0_0_/_10%)] font-open-sans-custom"
                   type="button"
                 >
-                  Отправить
+                  Отправить заявку
                 </Button>
               </form>
             </ContactCard>
